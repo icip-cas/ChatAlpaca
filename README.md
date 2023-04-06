@@ -14,7 +14,7 @@ In this dataset, we use ChatGPT (`GPT-3.5-turbo`) to generate follow-up utteranc
 
 The data in this repository consists of a JSON file `alpacapalooza_data.json` containing the multi-turn instruction-following conversations. Each item in the data file represents a different conversation between a simulated user and the ChatGPT. The data currently contain a total of 10,000 conversations with 95,558 utterances.
 
-The conversations in the dataset begin with an instruction followed by a response from ChatGPT, which are from the [Stanford Alpaca](https://github.com/tatsu-lab/stanford_alpaca) data. The conversation then continues with the user providing further instructions and ChatGPT responding accordingly. 
+The conversations in the dataset begin with an instruction, followed by a response from ChatGPT, which are from the [Stanford Alpaca](https://github.com/tatsu-lab/stanford_alpaca) data. The conversation then continues with the user providing further instructions and ChatGPT responding accordingly. 
 
 Each item in `alpacapalooza_data.json` is a list of dictionaries, each dictionary contains the following fields:
 
@@ -112,8 +112,8 @@ We continued this process until we reached a predetermined number of turns for c
 - [x] Release 10k data
 - [ ] Release 20k data
 - [ ] A translated Chinese version of our data
-- [ ] Llama-7b-lora model
-- [ ] Llama-7b fine-tuning model
+- [ ] LLaMA-7B-LoRA model
+- [ ] LLaMA-7B fine-tuning model
 
 ## Citation
 
