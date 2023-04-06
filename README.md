@@ -1,6 +1,6 @@
 # ChatAlpaca: A Multi-Turn Dialogue Corpus based on Alpaca Instructions
 
-ChatAlpaca is a chat dataset that aims to help researchers develop models for instruction-following in multi-turn conversations. The dataset is an extension of the [Stanford Alpaca](https://github.com/tatsu-lab/stanford_alpaca) data, which contains multi-turn instructions and their corresponding actions.
+ChatAlpaca is a chat dataset that aims to help researchers develop models for instruction-following in multi-turn conversations. The dataset is an extension of the [Stanford Alpaca](https://github.com/tatsu-lab/stanford_alpaca) data, which contains multi-turn instructions and their corresponding responses.
 
 In this dataset, we use ChatGPT (`GPT-3.5-turbo`) to generate follow-up utterances and continue the conversation with ChatGPT. This process results in multi-turn conversations where the simulated user provides instructions and ChatGPT responds accordingly.
 
