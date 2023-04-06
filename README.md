@@ -126,6 +126,6 @@ Please cite the repo if you use the data in this repo.
   year = {2023},
   publisher = {GitHub},
   journal = {GitHub repository},
-  howpublished = {\url{https://github.com/casnlu/alpacapalooza}},
+  howpublished = {\url{https://github.com/casnlu/Alpacapalooza}},
 }
 ```
