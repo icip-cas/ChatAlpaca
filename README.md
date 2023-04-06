@@ -1,10 +1,8 @@
-# Alpacapalooza: A Multi-Turn Chat Dataset with Alpaca
+# ChatAlpaca: A Multi-Turn Dialogue Corpus based on Alpaca Instructions
 
-Alpacapalooza is a chat dataset that aims to help researchers develop models for instruction-following in multi-turn conversations. The dataset is an extension of the [Stanford Alpaca](https://github.com/tatsu-lab/stanford_alpaca) data, which contains multi-turn instructions and their corresponding actions.
+ChatAlpaca is a chat dataset that aims to help researchers develop models for instruction-following in multi-turn conversations. The dataset is an extension of the [Stanford Alpaca](https://github.com/tatsu-lab/stanford_alpaca) data, which contains multi-turn instructions and their corresponding actions.
 
 In this dataset, we use ChatGPT (`GPT-3.5-turbo`) to generate follow-up utterances and continue the conversation with ChatGPT. This process results in multi-turn conversations where the simulated user provides instructions and ChatGPT responds accordingly.
-
-**In the name Alpacapalooza, "[palooza](https://en.wiktionary.org/wiki/palooza)" means an exaggerated event.*
 
 ![many_alpacas_chatting](many_alpacas_chatting.jpg)
 
@@ -12,11 +10,11 @@ In this dataset, we use ChatGPT (`GPT-3.5-turbo`) to generate follow-up utteranc
 
 ## Data
 
-The data in this repository consists of a JSON file `alpacapalooza_data.json` containing the multi-turn instruction-following conversations. Each item in the data file represents a different conversation between a simulated user and the ChatGPT. The data currently contain a total of 10,000 conversations with 95,558 utterances.
+The data in this repository consists of a JSON file `chatalpaca_data.json` containing the multi-turn instruction-following conversations. Each item in the data file represents a different conversation between a simulated user and the ChatGPT. The data currently contain a total of 10,000 conversations with 95,558 utterances.
 
 The conversations in the dataset begin with an instruction, followed by a response from ChatGPT, which are from the [Stanford Alpaca](https://github.com/tatsu-lab/stanford_alpaca) data. The conversation then continues with the user providing further instructions and ChatGPT responding accordingly. 
 
-Each item in `alpacapalooza_data.json` is a list of dictionaries, each dictionary contains the following fields:
+Each item in `chatalpaca_data.json` is a list of dictionaries, each dictionary contains the following fields:
 
 - `role`: `str`, either "user" or "assistant", represents the role in the conversation.
 - `content`: `str`, the conversation content.
@@ -58,7 +56,7 @@ Here is an example of our data.
 
 ## Data Generation Process
 
-To generate the Alpacapalooza dataset, we started with the original [Stanford Alpaca](https://github.com/tatsu-lab/stanford_alpaca) data. We used the instructions from this dataset as the starting point for our conversations.
+To generate the ChatAlpaca dataset, we started with the original [Stanford Alpaca](https://github.com/tatsu-lab/stanford_alpaca) data. We used the instructions from this dataset as the starting point for our conversations.
 
 ### Utterance Generation
 
@@ -120,12 +118,12 @@ We continued this process until we reached a predetermined number of turns for c
 Please cite the repo if you use the data in this repo.
 
 ```
-@misc{alpacapalooza,
+@misc{ChatAlpaca,
   author = {Ning Bian and Hongyu Lin and Yaojie Lu and Xianpei Han and Le Sun and Ben He },
-  title = {Alpacapalooza: A Multi-Turn Chat Dataset with Alpaca},
+  title = {ChatAlpaca: A Multi-Turn Dialogue Corpus based on Alpaca Instructions},
   year = {2023},
   publisher = {GitHub},
   journal = {GitHub repository},
-  howpublished = {\url{https://github.com/casnlu/Alpacapalooza}},
+  howpublished = {\url{https://github.com/casnlu/ChatAlpaca}},
 }
 ```
