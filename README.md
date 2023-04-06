@@ -2,6 +2,8 @@
 
 ChatAlpaca is a chat dataset that aims to help researchers develop models for instruction-following in multi-turn conversations. The dataset is an extension of the [Stanford Alpaca](https://github.com/tatsu-lab/stanford_alpaca) data, which contains multi-turn instructions and their corresponding responses.
 
+ChatAlpaca is developed by Chinese Information Processing Laboratory at the Institute of Software, Chinese Academy of Sciences (www.icip.org.cn).
+
 In this dataset, we use ChatGPT (`GPT-3.5-turbo`) to generate follow-up utterances and continue the conversation with ChatGPT. This process results in multi-turn conversations where the simulated user provides instructions and ChatGPT responds accordingly.
 
 ![many_alpacas_chatting](many_alpacas_chatting.jpg)
@@ -124,6 +126,8 @@ Please cite the repo if you use the data in this repo.
   year = {2023},
   publisher = {GitHub},
   journal = {GitHub repository},
-  howpublished = {\url{https://github.com/casnlu/ChatAlpaca}},
+  howpublished = {\url{https://github.com/cascip/ChatAlpaca}},
 }
 ```
+
+For more information please see www.icip.org.cn.
