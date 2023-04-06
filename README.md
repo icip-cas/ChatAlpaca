@@ -58,7 +58,7 @@ Here is an example of our data.
 
 To generate the ChatAlpaca dataset, we started with the original [Stanford Alpaca](https://github.com/tatsu-lab/stanford_alpaca) data. We used the instructions from this dataset as the starting point for our conversations.
 
-### Utterance Generation
+### User Utterance Generation
 
 We use ChatGPT (`GPT-3.5-turbo`) to generate follow-up utterances and continue the conversation. To do this, we provide the model with a designed prompt and the current chat history, and ask ChatGPT to generate a simulated user utterance by either following up with a further question or providing hints if the answer is wrong or if it doesn't know the answer. 
 
