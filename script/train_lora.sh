@@ -1,0 +1,16 @@
+python ./train/train_lora.py \
+--base_model /path/to/llama-7b  \
+--data_path /path/to/chatalpaca-please-add-train-and-eval \
+--output_dir /path/to/store/chatalpaca-7b-lora \
+--micro_batch_size 8  \
+--batch_size 64 \
+--cutoff_len 2048 \
+--num_epochs 3 \
+--learning_rate 3e-4 \
+--lora_target_modules '[q_proj,k_proj,v_proj,o_proj]' \
+--lora_r 16 \
+--prompt_style vicuna \
+--save_steps 200 \
+--train_on_inputs False \
+--wandb_project Chatalpaca \
+--wandb_run_name Chatalpaca-7B-lora
